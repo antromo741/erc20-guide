@@ -1,11 +1,11 @@
 // migrations/2_deploy.js
 // SPDX-License-Identifier: MIT
-const Token = artifacts.require("Token");
+const MyToken = artifacts.require("MyToken");
 
 
 module.exports = async function (deployer) {
     const accounts = await web3.eth.getAccounts()
 
-    await deployer.deploy(Token);
+    await deployer.deploy(MyToken);
 
 };
